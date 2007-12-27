@@ -5,11 +5,11 @@
 
 Name:           zero-install
 Version:        0.1.27
-Release:        %mkrel 6
+Release:        %mkrel 7
 Summary:        Removes the need to install software
 
 Group:          System/Servers
-License:        GPL
+License:        GPLv2+
 URL:            http://0install.net/
 Source0:        http://heanet.dl.sourceforge.net/sourceforge/zero-install/%{vname}.tar.gz.gpg
 Patch0:         zero-install-0.1.26-build.patch.bz2
@@ -103,7 +103,7 @@ rm -rf $RPM_BUILD_ROOT
 /usr/sbin/zero-install
 %{_sysconfdir}/rc.d/init.d/zero-install
 %attr(755, zeroinst, root) %dir /var/cache/zero-inst
-%doc COPYING NEWS README
+%doc NEWS README
 
 # -----------------------------------------------------------------------------
 
