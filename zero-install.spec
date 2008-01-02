@@ -19,6 +19,7 @@ Patch2:         zero-install-0.1.26-noload.patch.bz2
 Patch3:         zero-install-0.1.27-dbus050.patch.bz2
 # (nl) 0.1.27-6mdv2007.0 fix build with dbus 0.91
 Patch4:         zero-install-0.1.27-build-DBUS.patch
+BuildRoot:      %{_tmppath}/%{vname}-%{release}-root
 BuildRequires:  dbus-devel >= 0.20
 BuildRequires:  gnupg
 BuildRequires:  expat-devel
