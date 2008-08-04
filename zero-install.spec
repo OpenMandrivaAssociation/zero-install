@@ -5,7 +5,7 @@
 
 Name:           zero-install
 Version:        0.1.27
-Release:        %mkrel 9
+Release:        %mkrel 10
 Summary:        Removes the need to install software
 
 Group:          System/Servers
