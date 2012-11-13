@@ -1,0 +1,47 @@
+--- zero-install-0.1.27/control.c~	2006-09-02 11:53:45.000000000 +0200
++++ zero-install-0.1.27/control.c	2006-09-02 11:57:18.000000000 +0200
+@@ -238,7 +238,7 @@
+ 	}
+ oom:
+ 	error("Out of memory; disconnecting client");
+-	dbus_connection_disconnect(connection);
++	dbus_connection_close(connection);
+ out:
+ 	if (reply)
+ 		dbus_message_unref(reply);
+@@ -262,7 +262,7 @@
+ 	{
+ 		if (list_contains(&monitors, connection))
+ 			list_remove(&monitors, connection);
+-		dbus_connection_disconnect(connection);
++		dbus_connection_close(connection);
+ 		return DBUS_HANDLER_RESULT_HANDLED;
+ 	}
+ 
+@@ -348,7 +348,7 @@
+ 	/* Comment in bus.c suggests we need to do this; merely not
+ 	 * taking a ref won't actually close it.
+ 	 */
+-	dbus_connection_disconnect(new_connection);
++	dbus_connection_close(new_connection);
+ 	return;
+ 
+ }
+@@ -419,7 +419,7 @@
+ 		if (status == DBUS_DISPATCH_COMPLETE)
+ 			break;
+ 
+-		dbus_connection_disconnect(connection);
++		dbus_connection_close(connection);
+ 
+ 		/* error */
+ 	}
+@@ -690,7 +690,7 @@
+ 
+ static void drop_monitors(DBusConnection *connection, Task *unused)
+ {
+-	dbus_connection_disconnect(connection);
++	dbus_connection_close(connection);
+ }
+ 
+ void control_drop_clients(void)
