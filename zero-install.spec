@@ -108,3 +108,74 @@ rm -rf $RPM_BUILD_ROOT
 
 # -----------------------------------------------------------------------------
 
+
+
+%changelog
+* Wed Sep 09 2009 Thierry Vignaud <tvignaud@mandriva.com> 0.1.27-11mdv2010.0
++ Revision: 435379
+- rebuild
+
+* Mon Aug 04 2008 Thierry Vignaud <tvignaud@mandriva.com> 0.1.27-10mdv2009.0
++ Revision: 263030
+- rebuild
+- rebuild
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+* Thu Dec 27 2007 Adam Williamson <awilliamson@mandriva.org> 0.1.27-7mdv2008.1
++ Revision: 138682
+- rebuild for new expat
+- new license policy
+
+  + Thierry Vignaud <tvignaud@mandriva.com>
+    - kill re-definition of %%buildroot on Pixel's request
+    - import zero-install
+
+
+* Sat Sep 02 2006 Nicolas Lécureuil <neoclust@mandriva.org> 0.1.27-6mdv2007.0
+- Rebuild against new DBUS
+        Add patch 4: Fix build  with D-Bus 0.91
+- Fix some rpmlint warnings
+ 
+* Fri Jan 27 2006 Frederic Crozat <fcrozat@mandriva.com> 0.1.27-5mdk
+- Rebuild with latest dbus
+
+* Thu Nov 03 2005 Frederic Crozat <fcrozat@mandriva.com> 0.1.27-4mdk
+- Patch3: fix build with latest dbus
+
+* Wed Sep 28 2005 Nicolas Lécureuil <neoclust@mandriva.org> 0.1.27-3mdk
+- Fix BuildRequires ( again )
+
+* Wed Sep 28 2005 Nicolas Lécureuil <neoclust@mandriva.org> 0.1.27-2mdk
+- Fix BuildRequires
+- mkrel 
+- Fix PreReq
+
+* Mon Apr  4 2005 Frederic Lepied <flepied@mandrakesoft.com> 0.1.27-1mdk
+- New version
+
+* Thu Jan 20 2005 Emmanuel Blindauer <mdk@agat.net> 0.1.26-4mdk
+- update the require to the latest lazyfs
+
+* Wed Sep  1 2004 Frederic Lepied <flepied@mandrakesoft.com> 0.1.26-3mdk
+- fixed summary
+- added a require on the right version of lazyfs
+- reworked init script: o mount and unmount the filesystem
+                        o use standard functions
+                        o provide a status sub-command
+
+* Wed Sep  1 2004 Frederic Lepied <flepied@mandrakesoft.com> 0.1.26-2mdk
+- Requires lazyfs
+
+* Tue Aug 31 2004 Frederic Lepied <flepied@mandrakesoft.com> 0.1.26-1mdk
+- new version
+
+* Sat Jun 19 2004 Frederic Lepied <flepied@mandrakesoft.com> 0.1.24-1mdk
+- initial packaging
+
+* Sat Jun 5 2004 Alastair Porter
+- Update to 0.1.23
+
+* Fri Apr 24 2004 Thomas Leonard <tal197[AT]users.sf.net> - 0.1.22-1
+- Initial RPM release.

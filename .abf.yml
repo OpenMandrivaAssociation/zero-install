@@ -1,2 +1,5 @@
 sources:
-  "zero-install-0.1.27.tar.gz.gpg:"	71260694e46d01067b572df6bf5890b774f9ff92
+  "zero-install-0.1.26-build.patch.bz2": 92665f8f1f45c0ee6b6e5c04209c93ccf8099b4a
+  "zero-install-0.1.26-initscript.patch.bz2": ccffc52aca906e593c442ce8e398695aeb76a66f
+  "zero-install-0.1.26-noload.patch.bz2": c60d0d337bb55d105781e1ccf2dc9793865e7c9a
+  "zero-install-0.1.27-dbus050.patch.bz2": f275b07efd21d502ae4e6426cf70a1dbe618ec90
