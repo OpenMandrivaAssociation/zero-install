@@ -10,7 +10,7 @@ Summary:        Removes the need to install software
 
 Group:          System/Servers
 License:        GPLv2+
-URL:            http://0install.net/
+URL:            https://0install.net/
 Source0:        http://heanet.dl.sourceforge.net/sourceforge/zero-install/%{vname}.tar.gz.gpg
 Patch0:         zero-install-0.1.26-build.patch.bz2
 Patch1:         zero-install-0.1.26-initscript.patch.bz2
